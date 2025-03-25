@@ -1,0 +1,23 @@
+{
+    "posts": [
+      {
+        "id": "1",
+        "title": "Sunita Williams and Barry Wilmore: Return of the spacewalkers",
+        "body": "The NASA astronauts, who returned to earth after nine months in space, have something of an entrepreneurial spirit, guided by the ‘one step at a time’ ethos.",
+        "datetime": "2025-03-25 10:30 AM"
+      },
+      {
+        "id": "2",
+        "title": "Greenlanders unite to fend off U.S. as Trump seeks control of Arctic island",
+        "body": "In the wake of second lady Usha Vance’s visit to Greenland, locals are increasingly worried about their homeland becoming a pawn.",
+        "datetime": "2025-03-24 03:15 PM"
+      },
+      {
+        "id": "3",
+        "title": "Russia says new Black Sea deal is possible with certain conditions",
+        "body": "Russian Foreign Minister Sergei Lavrov said that any new agreement would need to have strict conditions attached to it.",
+        "datetime": "2025-03-23 07:45 AM"
+      }
+    ]
+  }
+  

@@ -3,10 +3,11 @@ import Post from './Post';
 
 export const Feed = ({ posts }) => {
   return (
-    <div className='feed-container'>
+    <div className="feed-container">
       {posts.map((post) => (
-        <div className='feed-card' key={post.id}>  
+        <div className="feed-card" key={Number(post.id)}>
           <Post post={post} />
+          
         </div>
       ))}
     </div>
