@@ -66,7 +66,12 @@ function App() {
     setPostTitle('');
     setPostBody('');
   };
-
+  const deletePost = (id) => {
+    const updatedPosts = posts.filter(post => post.id !== id);
+    setPosts(updatedPosts);
+    localStorage.setItem("posts", JSON.stringify(updatedPosts));
+  };
+  
   useEffect(() => {
     const filterResults = posts.filter((post) =>
       post.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -81,7 +86,7 @@ function App() {
       <br className="break" />
       <Nav search={search} setSearch={setSearch} />
       <Routes>
-        <Route path="/" element={<Home posts={searchResults} />} />
+        <Route path="/" element={<Home posts={searchResults} deletePost={deletePost}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/newpost" element={
           <NewPost
@@ -90,6 +95,7 @@ function App() {
             setPostBody={setPostBody}
             setPostTitle={setPostTitle}
             handleSubmit={handleSubmit}
+
           />
         } />
         <Route path="*" element={<Missing />} />

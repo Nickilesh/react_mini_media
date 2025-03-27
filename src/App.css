@@ -5,7 +5,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-/* Nav.css */
+
 .Nav {
   display: flex;
   justify-content: space-between;
@@ -253,6 +253,23 @@ button:hover {
   color: gray;
   margin-top: 5px;
 }
+
+.delete-btn {
+  
+  color: white;
+  border: solid;
+  border-color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-btn:active {
+  transform: scale(0.95); /* Slight shrink effect on click */
+}
+
 
 @keyframes App-logo-spin {
   from {
